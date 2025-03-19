@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC - 黎明期から現在までの総合格闘技の進化</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダーセクション -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>UFC<span>LEGENDS</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#history">歴史</a></li>
+                <li><a href="#champions">チャンピオン</a></li>
+                <li><a href="#rules">ルール</a></li>
+                <li><a href="#stars">スター選手</a></li>
+                <li><a href="#contact" class="btn-contact">お問い合わせ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="glitch-text" data-text="UFC">UFC</h2>
+                <h3>黎明期から現在までの総合格闘技の進化とチャンピオンの栄光</h3>
+                <p>1993年の設立から世界最大の総合格闘技団体へ</p>
+                <a href="#history" class="btn-primary">詳しく見る</a>
+            </div>
+            <div class="hero-graphics">
+                <!-- SVGアニメーションはJSで制御 -->
+                <div class="octagon-container">
+                    <div class="octagon"></div>
+                    <div class="octagon-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 歴史セクション -->
+    <section id="history" class="history-section">
+        <div class="container">
+            <h2 class="section-title">UFCの<span>歴史</span></h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>1993年 - 黎明期</h3>
+                        <p>コロラド州デンバーで初開催。ホリオン・グレイシーとアート・デイビーによる共同企画から始まり、「最強の格闘技を決める」というコンセプトを掲げた。</p>
+                        <div class="history-icon"><i class="fas fa-flag"></i></div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>1990年代後半 - ルール改正</h3>
+                        <p>階級制度の導入や安全性向上を目的としたルール改正が行われ、競技としての完成度が高まる。</p>
+                        <div class="history-icon"><i class="fas fa-book"></i></div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2000年代 - 国際的広がり</h3>
+                        <p>チャック・リデルやアンデウソン・シウバなどのスター選手が登場し、世界各国へのイベント開催が広がる。</p>
+                        <div class="history-icon"><i class="fas fa-globe"></i></div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2010年代 - 新世代と女性選手</h3>
+                        <p>ジョン・ジョーンズやコナー・マクレガーなどの新世代スターが台頭。女子部門も注目を集め、ロンダ・ラウジーやアマンダ・ヌネスが活躍。</p>
+                        <div class="history-icon"><i class="fas fa-users"></i></div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>現在 - グローバルスポーツへ</h3>
+                        <p>世界中で人気を博し、総合格闘技の代名詞として確固たる地位を築く。新たな才能の発掘と記録更新が続いている。</p>
+                        <div class="history-icon"><i class="fas fa-trophy"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- チャンピオンセクション -->
+    <section id="champions" class="champions-section">
+        <div class="container">
+            <h2 class="section-title">階級別<span>チャンピオン</span></h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-target="male">男子部門</button>
+                <button class="tab-btn" data-target="female">女子部門</button>
+            </div>
+            <div class="tab-content">
+                <div id="male" class="weight-classes active">
+                    <div class="weight-class-card">
+                        <h3>ヘビー級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-heavyweight.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>マーク・コールマン（初代）<br>ランディ・クートゥア（複数回）<br>スティペ・ミオシッチ（最多防衛記録保持者）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weight-class-card">
+                        <h3>ライトヘビー級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-lightheavy.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>チャック・リデル（スター選手）<br>ジョン・ジョーンズ（歴代最強）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weight-class-card">
+                        <h3>ミドル級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-middle.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>アンデウソン・シウバ（記録保持者）<br>イズラエル・アデサニヤ（現代スター）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weight-class-card">
+                        <h3>ウェルター級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-welter.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>ジョルジュ・サンピエール（最多防衛）<br>カマル・ウスマン（近年活躍）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weight-class-card">
+                        <h3>ライト級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-light.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>コナー・マクレガー（スター選手）<br>ハビブ・ヌルマゴメドフ（無敗記録保持者）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="female" class="weight-classes">
+                    <div class="weight-class-card">
+                        <h3>ストロー級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-straw.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>ヨアンナ・イェンジェイチック（最多防衛）<br>ローズ・ナマユナス</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weight-class-card">
+                        <h3>フライ級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-fly.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>ヴァレンティーナ・シェフチェンコ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weight-class-card">
+                        <h3>バンタム級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-bantam.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>ロンダ・ラウジー（初代）<br>アマンダ・ヌネス</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weight-class-card">
+                        <h3>フェザー級</h3>
+                        <div class="champion-info">
+                            <div class="champion-photo" style="background-image: url('img/placeholder-feather.jpg')"></div>
+                            <div class="champion-details">
+                                <h4>代表選手</h4>
+                                <p>アマンダ・ヌネス（唯一無二）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ルール変遷セクション -->
+    <section id="rules" class="rules-section">
+        <div class="container">
+            <h2 class="section-title"><span>ルール</span>変遷</h2>
+            <div class="rules-comparison">
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <h3>黎明期のルール</h3>
+                        <span class="year">1993年〜</span>
+                    </div>
+                    <ul class="rule-list">
+                        <li>体重制限や階級制度がない</li>
+                        <li>無制限ラウンド制</li>
+                        <li>反則は目潰し、噛み付き、金的攻撃のみ</li>
+                        <li>グローブ着用義務なし</li>
+                        <li>異なる格闘技スタイル同士の対決</li>
+                    </ul>
+                </div>
+                <div class="rules-divider">
+                    <div class="evolution-arrow">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <h3>現代のユニファイド・ルール</h3>
+                        <span class="year">2000年代〜</span>
+                    </div>
+                    <ul class="rule-list">
+                        <li>階級制度の導入（男子8階級、女子4階級）</li>
+                        <li>5分3ラウンド制（タイトル戦は5ラウンド）</li>
+                        <li>25種類以上の反則行為を規定</li>
+                        <li>グローブ着用の義務化</li>
+                        <li>医師による健康チェック</li>
+                        <li>厳格なドーピング検査</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rules-info">
+                <p>UFCは設立当初から<span class="highlight">安全性</span>と<span class="highlight">競技性</span>を両立させるためにルール改正を重ね、現在の形に進化してきました。これにより総合格闘技として国際的な認知を得ることに成功しています。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- スター選手セクション -->
+    <section id="stars" class="stars-section">
+        <div class="container">
+            <h2 class="section-title">時代ごとの<span>スター選手</span></h2>
+            <div class="star-era-slider">
+                <div class="era-slide active">
+                    <div class="era-header">
+                        <h3>1990年代</h3>
+                        <p>黎明期から英雄たちへ</p>
+                    </div>
+                    <div class="star-cards">
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-gracie.jpg')"></div>
+                            <h4>ホイス・グレイシー</h4>
+                            <p>ブラジリアン柔術を駆使してUFC 1を含む複数回の大会で優勝。「柔術革命」の立役者。</p>
+                        </div>
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-shamrock.jpg')"></div>
+                            <h4>ケン・シャムロック</h4>
+                            <p>パワフルなグラップリングスタイルで観客を魅了。サブミッション技の名手。</p>
+                        </div>
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-coleman.jpg')"></div>
+                            <h4>マーク・コールマン</h4>
+                            <p>「グラウンド＆パウンド」戦術を確立。多くの後続選手に影響を与えた。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="era-slide">
+                    <div class="era-header">
+                        <h3>2000年代</h3>
+                        <p>スター選手と国際的広がり</p>
+                    </div>
+                    <div class="star-cards">
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-liddell.jpg')"></div>
+                            <h4>チャック・リデル</h4>
+                            <p>その強烈な打撃力でライトヘビー級王者に。「アイスマン」の愛称で人気を博す。</p>
+                        </div>
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-silva.jpg')"></div>
+                            <h4>アンデウソン・シウバ</h4>
+                            <p>ミドル級王者として10連勝以上という驚異的な記録を樹立。カウンター技術の名手。</p>
+                        </div>
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-gsp.jpg')"></div>
+                            <h4>ジョルジュ・サンピエール</h4>
+                            <p>ウェルター級王者として多彩なスキルと冷静な戦略で長期統治。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="era-slide">
+                    <div class="era-header">
+                        <h3>2010年代</h3>
+                        <p>新世代と女性選手</p>
+                    </div>
+                    <div class="star-cards">
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-jones.jpg')"></div>
+                            <h4>ジョン・ジョーンズ</h4>
+                            <p>ライトヘビー級王者として圧倒的な支配力。「史上最強」とも称される存在。</p>
+                        </div>
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-mcgregor.jpg')"></div>
+                            <h4>コナー・マクレガー</h4>
+                            <p>カリスマ性と打撃力で一躍世界的なスーパースターに。複数階級制覇を達成。</p>
+                        </div>
+                        <div class="star-card">
+                            <div class="star-photo" style="background-image: url('img/placeholder-nunes.jpg')"></div>
+                            <h4>アマンダ・ヌネス</h4>
+                            <p>複数階級制覇の偉業を達成。「女子MMA史上最強」と称される。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-navigation">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 国際進出セクション -->
+    <section class="global-section">
+        <div class="container">
+            <h2 class="section-title">世界への<span>広がり</span></h2>
+            <div class="globe-container">
+                <div class="globe-visual">
+                    <!-- 地球儀のビジュアル表現 -->
+                    <div class="globe"></div>
+                    <div class="globe-pin" style="top: 30%; left: 20%;" data-country="アメリカ"></div>
+                    <div class="globe-pin" style="top: 35%; left: 48%;" data-country="ブラジル"></div>
+                    <div class="globe-pin" style="top: 25%; left: 65%;" data-country="日本"></div>
+                    <div class="globe-pin" style="top: 40%; left: 75%;" data-country="中国"></div>
+                    <div class="globe-pin" style="top: 20%; left: 45%;" data-country="イギリス"></div>
+                </div>
+                <div class="global-info">
+                    <h3>国際進出と各国の選手</h3>
+                    <p>UFCは2000年代以降、世界各地へ進出し、多国籍選手による競争環境を構築しています。アメリカ、ブラジルを中心に、日本、中国、イギリスなど世界中で大会を開催。</p>
+                    <h4>日本人選手の活躍</h4>
+                    <p>岡見勇信や堀口恭司などが活躍し、それぞれタイトル挑戦権を獲得するなど一定の成果を挙げています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">お問い<span>合わせ</span></h2>
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">件名</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッターセクション -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>UFC<span>LEGENDS</span></h2>
+                </div>
+                <div class="footer-links">
+                    <h3>リンク</h3>
+                    <ul>
+                        <li><a href="#history">歴史</a></li>
+                        <li><a href="#champions">チャンピオン</a></li>
+                        <li><a href="#rules">ルール</a></li>
+                        <li><a href="#stars">スター選手</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>ソーシャルメディア</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UFC LEGENDS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
