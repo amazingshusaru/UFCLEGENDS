@@ -262,7 +262,7 @@ section {
 }
 
 .hero h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* 改行を防ぐためにサイズを小さく調整 */
     margin-bottom: 1rem;
     color: var(--text-light);
 }
@@ -1059,7 +1059,7 @@ section {
     }
 
     .hero h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .timeline::after {
@@ -1123,16 +1123,5 @@ section {
 
     .evolution-arrow {
         transform: rotate(90deg);
-    }
-}
-
-@media (max-width: 576px) {
-    .hero h2 {
-        font-size: 3rem;
-    }
-
-    .octagon-container {
-        width: 200px;
-        height: 200px;
     }
 }
