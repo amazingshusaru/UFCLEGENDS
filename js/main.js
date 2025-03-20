@@ -27,6 +27,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // ===== ヘッダー背景画像の自動切り替え =====
+    const headerBgs = document.querySelectorAll('.header-bg');
+    let currentBg = 0;
+
+    function changeBackground() {
+        // 全ての背景画像からactiveクラスを削除
+        headerBgs.forEach(bg => bg.classList.remove('active'));
+        
+        // 次の背景画像を表示
+        currentBg = (currentBg + 1) % headerBgs.length;
+        headerBgs[currentBg].classList.add('active');
+    }
+
+    // 5秒ごとに背景画像を切り替え
+    let bgInterval = setInterval(changeBackground, 5000);
+
+    // ページにフォーカスがない場合は切り替えを停止（オプション）
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            clearInterval(bgInterval);
+        } else {
+            bgInterval = setInterval(changeBackground, 5000);
+        }
+    });
+
     // ===== スムーススクロール =====
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -213,11 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(`${country}での大会・選手について詳しく見る`);
         });
     });
-
-    // ===== ウィンドウリサイズ時の処理 =====
-    window.addEventListener('resize', () => {
-        // レスポンシブ対応のための処理
-    });
 });
 
 // ===== ページの読み込み完了時の処理 =====
@@ -225,5 +245,3 @@ window.addEventListener('load', () => {
     // ページ全体をフェードインさせる
     document.body.classList.add('loaded');
 });
-
-            
