@@ -118,15 +118,30 @@ section {
 
 /* ===== ヘッダー & ナビゲーション ===== */
 .header {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
     position: relative;
+    color: var(--text-light);
     min-height: 100vh;
-    background-image: url('../img/ufc-bg.jpg');
+    overflow: hidden;
+}
+
+/* 背景画像切り替え用のスタイル */
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: -1;
+}
+
+.header-bg.active {
+    opacity: 1;
 }
 
 .navbar {
@@ -214,6 +229,8 @@ section {
     min-height: 100vh;
     text-align: center;
     padding: 5rem 1rem;
+    position: relative;
+    z-index: 2; /* 背景よりも前に表示 */
 }
 
 .hero-content {
@@ -1123,5 +1140,20 @@ section {
 
     .evolution-arrow {
         transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero h3 {
+        font-size: 1.2rem; /* さらに小さく */
+    }
+
+    .octagon-container {
+        width: 200px;
+        height: 200px;
     }
 }
