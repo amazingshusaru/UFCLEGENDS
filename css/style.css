@@ -620,7 +620,7 @@ section {
 .star-era-slider {
     position: relative;
     overflow: hidden;
-    min-height: 600px; /* スライダーの最小高さを固定 */
+    min-height: 580px; /* 画像の高さを元に戻したので調整 */
 }
 
 .era-slide {
@@ -651,7 +651,7 @@ section {
 .star-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem; /* 2remから1.5remに縮小 */
 }
 
 .star-card {
@@ -669,7 +669,7 @@ section {
 }
 
 .star-photo {
-    height: 250px;
+    height: 250px; /* 元のサイズに戻す */
     background-size: cover;
     background-position: center;
     border-radius: var(--border-radius);
@@ -686,7 +686,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem; /* 2remから1remに縮小 */
 }
 
 .prev-btn, .next-btn {
